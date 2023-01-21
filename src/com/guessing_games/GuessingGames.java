@@ -13,8 +13,8 @@ public class GuessingGames {
     public void getRandomizeNumber(){
         boolean condition = true;
         int getNumber = randomizeNumbers();
+        Scanner newScanner = new Scanner(System.in);
         while(condition == true){
-            Scanner newScanner = new Scanner(System.in);
             int input = newScanner.nextInt();
             if(input == getNumber){
                 System.out.println("you guessed right number");
